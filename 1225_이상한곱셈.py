@@ -1,8 +1,6 @@
 a, b = input().split()
 
-result = 0
-for i in range(len(a)) :
-    for j in range(len(b)) :   
-        result += int(a[i])*int(b[j])
+li_a = list(map(int,a))
+li_b = list(map(int,b))
 
-print(result)
+print(sum(li_a)*sum(li_b))
